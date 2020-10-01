@@ -1,0 +1,44 @@
+{
+  "name": "nodebb-plugin-full-screen",
+  "version": "0.2.5",
+  "description": "nodebb-plugin-full-screen",
+  "main": "library.js",
+  "repository": {
+    "type": "nodebb-plugin-full-screen",
+    "url": "https://github.com/incotnigo/nodebb-plugin-full-screen"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "quickstart",
+    "shell"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": {
+    "name": "incotnigo",
+    "email": "incotnigo@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/incotnigo/nodebb-plugin-full-screen/issues"
+  },
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.13.0"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "screenfull": "^5.0.2"
+  }
+}

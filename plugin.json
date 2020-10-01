@@ -1,0 +1,15 @@
+{
+	"id": "nodebb-plugin-full-screen",
+	"url": "https://github.com/NodeBB/nodebb-plugin-full-screen",
+	"library": "./library.js",
+	"hooks": [],
+	"staticDirs": {
+		"static": "./static"
+	},
+	"scripts": [
+		"static/lib/main.js"
+	],
+	"modules": {
+		"screenfull.js": "node_modules/screenfull/dist/screenfull.js"
+	  }
+}

@@ -14,7 +14,10 @@ $(document).ready(function () {
 	panel.on('click', function () {
 		if (screenfull.enabled) {
             screenfull.request();
-        }
+        }else{
+		screenfull.exit();
+	}
+		
 	});
 
 	panel.find('a').tooltip({

@@ -12,12 +12,7 @@ $(document).ready(function () {
 	}
 	
 	panel.on('click', function () {
-		if (screenfull.enabled) {
-            screenfull.request();
-        }else{
-		screenfull.exit();
-	}
-		
+		screenfull.toggle();
 	});
 
 	panel.find('a').tooltip({
